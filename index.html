@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pixel Art Maker! By Irsh</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class=" display-container  teal">
+    <h1>Lab: Pixel Art Maker</h1>
+    <button id="instructB" class="bottomrightB ">?</button>
+  </header>
+
+  <div id="instruct">
+    <p> Click and hold right mouse button to erase the paint </p>
+    <p>Double click on box to remove the existing color from single box</p>
+    <p> Click and hold mouse button to paint like a brush</p>
+    <p> To paint single grid do single mouse click</p>
+    <p> <strong>Use reset button to stop dancing</p></strong>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird">
+      <h2>Choose Grid Size</h2>
+      <form class="container" id="sizePicker">
+        <div class="w3-row">
+          <div class="w3-quarter">
+            <label for="inputHeight">Grid Height:</label>
+            <input class="input" type="number" id="inputHeight" name="height" min="1" value="20">
+          </div>
+          <div class="w3-quarter">
+            <label  for="inputWeight">Grid Width:</label>
+            <input class="input" type="number" id="inputWeight" name="width" min="1" value="20">
+          </div>
+          <div class="w3-half need-margine">
+            <button class="w3-btn teal" type="submit" id="submit">Make Grid</button>
+            <button class="w3-btn teal"  id="reset">Reset Grid</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="w3-third">
+      <h2>Pick A Color</h2>
+      <input type="color" id="colorPicker" value="#009688">
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Your Canvas</h2>
+    <p>change box size</p>
+    <input type="range" min="20" max="50" value="20" class="slider" id="myRange">
+  </div>
+  <div class="container">
+    <table id="pixelCanvas"></table>
+  </div>
+
+  <div class="container">
+    <div id="secret">
+      <button class="w3-btn teal" type="submit" id="dance">Lets Dance</button>
+    </div>
+  </div>
+
+  <div class=" teal" id="toast">Done</div>
+</body>
+
+<script src="designs.js"></script>
+
+</html>
