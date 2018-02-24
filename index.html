@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Pixel Art Maker! By Irsh </title>
+  <title>Pixel Art Maker! By Irsh</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
 
 <body>
 
-  <header class=" display-container teal">
+  <header class=" display-container  teal">
     <h1>Lab: Pixel Art Maker</h1>
     <button id="instructB" class="bottomrightB ">?</button>
   </header>
@@ -22,7 +22,7 @@
     <p>Double click on box to remove the existing color from single box</p>
     <p> Click and hold mouse button to paint like a brush</p>
     <p> To paint single grid do single mouse click</p>
-    <p> <strong>Use reset button to stop dancing </p></strong>
+    <p> <strong>Use reset button to stop dancing</p></strong>
   </div>
 
   <div class="w3-row">
@@ -32,11 +32,11 @@
         <div class="w3-row">
           <div class="w3-quarter">
             <label for="inputHeight">Grid Height:</label>
-            <input class="input" type="number" id="inputHeight" name="height" min="1" value="20">
+            <input class="input" type="number" id="inputHeight" name="height" min="1" max="100" value="20">
           </div>
           <div class="w3-quarter">
             <label  for="inputWeight">Grid Width:</label>
-            <input class="input" type="number" id="inputWeight" name="width" min="1" value="20">
+            <input class="input" type="number" id="inputWeight" name="width" min="1" max="100" value="20">
           </div>
           <div class="w3-half need-margine">
             <button class="w3-btn teal" type="submit" id="submit">Make Grid</button>
