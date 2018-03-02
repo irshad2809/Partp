@@ -35,7 +35,7 @@ table.on("click", "td", function() {
 });
 
 //dblclick
-$("body").on("dblclick", "td", function() {
+table.on("dblclick", "td", function() {
 
   $(this).css("background-color", "#0000");
 });
@@ -43,7 +43,7 @@ $("body").on("dblclick", "td", function() {
 /* https://stackoverflow.com/questions/2349764/jquery-is-mousedown-on-mouseover  */
 
 isMouseDown = false;
-table.mousedown(function() {
+$("body").mousedown(function() {
 
     isMouseDown = true;
 
