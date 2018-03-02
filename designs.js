@@ -4,10 +4,10 @@ let pickedColor = "#009688";
 let resetB = $("#reset");
 let height;
 let width;
-let toast = $("#toast");
-let danceB = $("#dance");
-let secret = $("#secret");
-let instruct = $("#instruct");
+const toast = $("#toast");
+const danceB = $("#dance");
+const secret = $("#secret");
+const instruct = $("#instruct");
 secret.hide();
 instruct.hide();
 var interval = null;
@@ -35,7 +35,7 @@ table.on("click", "td", function() {
 });
 
 //dblclick
-table.on("dblclick", "td", function() {
+$("body").on("dblclick", "td", function() {
 
   $(this).css("background-color", "#0000");
 });
